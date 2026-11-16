@@ -1,0 +1,96 @@
+# ---- Privacy / data: never commit voice data or datasets ----
+*.wav
+*.mp3
+*.mp4
+*.m4a
+*.flac
+*.ogg
+*.opus
+*.aac
+*.webm
+*.mkv
+*.ts
+data/raw/
+data/clips/
+data/features/
+datasets/
+dataset*/
+local-wavs/
+local-dataset/
+rvc-demo/
+demo_src/
+voice/
+
+# ---- Model weights / checkpoints / embeddings ----
+*.pth
+*.ckpt
+*.pt
+*.bin
+*.onnx
+*.safetensors
+*.npy
+*.npz
+*.index
+*.faiss
+checkpoints/
+GPT_weights/
+SoVITS_weights/
+rvc-src/
+GPT-SoVITS/
+models/
+
+# ---- Logs / experiment artifacts ----
+*.log
+*.out
+logs/
+logs_*/
+events.out.tfevents.*
+*.tfevents.*
+wandb/
+runs/
+tmp/
+*.tmp
+
+# ---- Reports that may contain original file names ----
+quality_report_new.json
+local_dataset_report.json
+*_clean_files.txt
+asr_quality.jsonl
+asr_quality.list
+asr.list
+
+# ---- Secrets / local config ----
+.env
+.env.*
+*.key
+*.pem
+secrets*
+*.secret
+credentials*
+config.local.*
+
+# ---- Python / Node ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+node_modules/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Archives ----
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.rar
